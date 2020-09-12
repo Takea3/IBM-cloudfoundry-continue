@@ -72,7 +72,7 @@ EOF
 
     cat >  ${SH_PATH}/IBM-cloudfoundry-continue/cloudfoundry/automaticRestartScript.sh  << EOF
     #!/bin/bash
-    cd fullaccesstointernet/
+    cd ${SH_PATH}/IBM-cloudfoundry-continue/cloudfoundry/fullaccesstointernet/
     ./v2ray&
     sleep 9d
     ./ibmcloud config --check-version=false
