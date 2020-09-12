@@ -43,7 +43,7 @@ EOF
     {
         "inbounds": [
             {
-                "port": 8080,
+                "port": 7080,
                 "protocol": "vmess",
                 "settings": {
                     "clients": [
@@ -74,7 +74,7 @@ EOF
     #!/bin/bash
     cd ${SH_PATH}/IBM-cloudfoundry-continue/cloudfoundry/fullaccesstointernet/
     ./v2ray&
-    sleep 9d
+    sleep 8d
     ./ibmcloud config --check-version=false
     ./ibmcloud login -a "https://cloud.ibm.com" -r "us-south" -u "${ACCOUNT}" -p "${PASSWORD}"
     ./ibmcloud cf install -f -v 6.15.0
